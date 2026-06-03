@@ -1,0 +1,25 @@
+name: GitHub Profile Summary Cards
+
+on:
+  schedule:
+    # Runs twice a day (00:00 and 12:00 UTC)
+    - cron: "0 */12 * * *"
+  workflow_dispatch:   # lets you run it manually from the Actions tab
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: "main"
+          UTC_OFFSET: -3          # Fortaleza / Brasília time
+          EXCLUDE: ""
+          AUTO_PUSH: true
