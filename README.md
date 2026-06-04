@@ -19,7 +19,7 @@
 
 - 🔭 Full Stack Engineer with **3+ years** building scalable web and backend systems
 - 🤖 Focused on **AI-powered applications** — RAG and multi-agent architectures with LangChain / LangGraph
-- ⚡ I like making things cheaper and faster: cut a product's deploy cost by **~78%** and RAM usage by **90%+** (from 12 GB to under 1 GB) by switching memory allocation from glibc to jemalloc
+- ⚡ I like making things cheaper and faster: cut a product's deploy cost by **~78%** and RAM usage by **90%+** (from 12 GB to under 1 GB)
 - 🌱 Currently building **DesignBuilder**, an AI image-generation product, @ EasyBuilder
 - 🎓 Tech in Systems Analysis & Development @ UNIFIP
 - 📫 Reach me at **lucasdanielspead@gmail.com**
